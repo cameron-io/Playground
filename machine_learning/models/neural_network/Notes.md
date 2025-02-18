@@ -60,3 +60,20 @@ y ranges from -1 to 1
 
 y = f(x) = { 0 if x <= 0
            { x if x > 0
+
+
+### Multi-layer Perceptron
+
+A neural network is the combination of neurons where the outputs of some neurons are inputs of other neurons.
+
+Feed-Forward neural networks have the neurons only send signals in one direction.
+
+Multi-Layer Perceptron (MLP) neural networks are most commonly used.
+
+A multi-layer perceptron will always have:
+- one input layer, with a neuron (or node) for each input. 
+- any number of hidden layers and each hidden layer can have any number of nodes.
+- one output layer, with a node for each output.
+
+1. The nodes in the input layer take a single input value and pass it forward.
+2. The nodes in the hidden layers as well as the output layer can take multiple inputs but they always produce a single output.
