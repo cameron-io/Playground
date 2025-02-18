@@ -106,3 +106,23 @@ info_gain = 0.1393
 ```
 
 The higher the informational gain, the better.
+
+Another example:
+```python
+# Sample Input:
+#   1 0 1 0 1 0
+#   1 1 1
+#   0 0 0
+S = [int(x) for x in input().split()]
+A = [int(x) for x in input().split()]
+B = [int(x) for x in input().split()]
+
+# Gini Impurities
+gini_s = 2 * S.count(1)/len(S) * (1 - S.count(1)/len(S))
+gini_a = 2 * A.count(1)/len(A) * (1 - A.count(1)/len(A))
+gini_b = 2 * B.count(1)/len(B) * (1 - B.count(1)/len(B))
+
+# Info gain
+info_gain = gini_s - (gini_a*len(A)/len(S)) - (gini_b*len(B)/len(S))
+print(round(info_gain, 5))
+```
