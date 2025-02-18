@@ -100,7 +100,7 @@ gini_whole_set = 0.4738
 gini_female = 0.3828
 gini_male = 0.3081
 
-info_gain = (gini_whole_set) - (f_survived/total) - (m_survived/total)
+info_gain = (gini_whole_set) - (f_survived/total * gini_female) - (m_survived/total * gini_male)
 info_gain = 0.4738 - (314/887 * 0.3828) - (573/887 * 0.3081)
 info_gain = 0.1393
 ```
